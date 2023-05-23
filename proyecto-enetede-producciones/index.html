@@ -85,12 +85,12 @@
                         </div>
                       </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <button class="carousel-control-prev" class="contenedor-boton" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" class="contenedor-boton" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="carousel-control-next-icon" class="contenedor-boton" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
@@ -99,18 +99,45 @@
         </main>
       
     <aside>
-      VENTANA MODAL  <! ––« link a proyectos individuales. ACÁ TIENE QUE HABER "VENTANA MODAL" «––>
-     <div class="modal">
-      <div class="contenedor">
-        
-        <div class="contenido">
-          <h2> spa holístico</h2>
-         <p>
-          descripción del spa
-        </p>
+      <! ––« link a proyectos individuales. ACÁ TIENE QUE HABER "VENTANA MODAL" «––>
+      <input type="checkbox" id="btn-modal-spa" >
+      <label for="btn-modal-spa" class="lbl-modal-spa">Ver Spa Holístico</label>
+      <div class="modal-spa">
+        <div class="contenedor-spa">
+          <header>¡Bienvenidos!</header>
+          <label for="btn-modal-spa">X</label>
+          <div class="contenido-spa">
+            <h3><!-- Agregar un titulo --></h3>
+            <p><!-- Agregar un mensaje --></p>
+          </div>
+        </div>
       </div>
+
+      <input type="checkbox" id="btn-modal-cuaderno" >
+      <label for="btn-modal-cuaderno" class="lbl-modal-cuaderno">Ver Encuadernación</label>
+      <div class="modal-cuaderno">
+        <div class="contenedor-cuaderno">
+          <header>¡Bienvenidos!</header>
+          <label for="btn-modal-cuaderno">X</label>
+          <div class="contenido-cuaderno">
+            <h3><!-- Agregar un titulo --></h3>
+            <p><!-- Agregar un mensaje --></p>
+          </div>
+        </div>
       </div>
-    </div>
+
+      <input type="checkbox" id="btn-modal-editorial" >
+      <label for="btn-modal-editorial" class="lbl-modal-editorial">Ver Editorial</label>
+      <div class="modal-editorial">
+        <div class="contenedor-editorial">
+          <header>¡Bienvenidos!</header>
+          <label for="btn-modal-editorial">X</label>
+          <div class="contenido-editorial">
+            <h3><!-- Agregar un titulo --></h3>
+            <p><!-- Agregar un mensaje --></p>
+          </div>
+        </div>
+      </div>
     </aside>
 
      <footer class="container-footer"> 
