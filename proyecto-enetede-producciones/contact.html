@@ -4,72 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+   
     <title>Reservá tu turno</title>
 </head>
-<body>
+<body class="body-contact">
     <header>
-        <h1>enetedé producciones</h1>  
+        <div class="div-logo">
+        <img src="assets/enetede-logo.webp" class="logo"> <! ––« acá iría el título «––></div>
         <nav> <! ––« nosotres/tienda/contacto/dona «––>
-        <ul class="lista-nav">
-                 <li class="item-lista-nav"> <a  href="index.html"> Nosotres </a></li>
-                 <li class="item-lista-nav"> <a href="e-commerce.html"> Compranos </a>
-                 </li>
-                 <li class="item-lista-nav"> <a href="contact.html"> Reservá tu turno </a> 
-                 </li>
-                 <li class="item-lista-nav"> <a href="help-us.html"> Ayudanos </a> 
-                </li>
-            </ul>
-        </nav>
-        </header>
+          
+          <ul class="lista-nav">
+               <li class="item-lista-nav"> <a  href="index.html"> Nosotres </a></li>
+               <li class="item-lista-nav"> <a href="e-commerce.html"> Compranos </a>
+               </li>
+               <li class="item-lista-nav"> <a href="contact.html"> Reservá tu turno </a> 
+               </li>
+               <li class="item-lista-nav"> <a href="help-us.html"> Ayudanos </a> 
+              </li>
+          </ul>
+      </nav>
+      </header>
     
-    <main clas="main-contact">
+    <main class="main-contact">
         <div>
             <! ––« formulario de contacto con nombre, pronombre, telefono, mail, mensaje «––>
             <form>
                 <h2>Contactanos para reservar<br> tu turno en el spa</h2>
-                <p><label for="nombre">Nombre : <input type="text" id="nombre"> </label>
-                </p>
-                <p><label for="apellido">Apellido : <input type="text" id="apellido"> </label>
-                 </p>
-                 <p><label for="pronombre"> Pronombres : </label><br>
-                 <input type="radio" name="gender" value="female"> Solo femeninos<br>
-                  <input type="radio" name="gender" value="male"> Solo masculinos<br>
-                   <input type="radio" name="gender" value="other"> Solo neutros <br>
-                   <input type="radio" name="gender" value="its-the-same"> Me da igual </p>
-         
-             <p><label for="telefono">Teléfono : <input type="tel" id="telefono"></input>
-                 </p>
-                 <p><label for="email">E-mail : <input type="email" id="email"></input>
-             <p><label for="mensaje">Mensaje : </label> <textarea id="mensaje"></textarea>
-                 </p>
-              <button type="submit">Enviar</button>
+                <label for="nombre">Nombre : <input type="text" name="nombre" id="nombre" placeholder="Nombre" required> </label><br>
+                <label for="apellido">Apellido : <input type="text" name="apellido" id="apellido" placeholder="Apellido" required> </label><br>
+                <label for="pronombre"> Pronombres : </label><br>
+                 <input type="radio" name="pronombre" value="femeninos"> Solo femeninos<br>
+                  <input type="radio" name="pronombre" value="masculinos"> Solo masculinos<br>
+                   <input type="radio" name="pronombre" value="neutros"> Solo neutros <br>
+                   <input type="radio" name="pronombre" value="indistintos"> Me da igual <br>
+                <label for="telefono">Teléfono : <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" required></input><br>
+                <label for="email">E-mail : <input type="email" name="email" id="email" placeholder="E-mail" required></input><br>
+                <label for="mensaje">Mensaje : </label> <textarea name="mensaje" id="mensaje" placeholder="Su mensaje" required></textarea><br>
+              <button type="submit" value="enviar" id="submit" onclick="getData()">Enviar</button>
             </form>
         </div>
          <div>
             <p>También nos podés escribir a <b>contacto@notandistintas.org</b> o comunicarte al <b>+54 9 11 4446 6622</b></p>
         </div>
     </main>
+    
     <footer class="container-footer"> 
         <div class="texto-footer"> Gracias por bancar proyectos autogestivos y transfeministas</div>
         <!––« acá faltaría agregar una línea divisoria «––>
         <div class="container-lista-footer">
             <ul class="lista-footer">
-             <li> <a href="https://www.instagram.com/notandistintes_/" target="_blank"> <!Instagram> <img class="imagen-media" src="assets/instagram.jpg" alt="Instagram">
+             <li> <a href="https://www.instagram.com/notandistintes_/" target="_blank"> <!Instagram> <img class="imagen-media" src="assets/instagram-sin-fondo.png" alt="Instagram">
             </a></li>
-            <li> <a href="https://www.facebook.com/notandistintes" target="_blank"> <!facebook> <img class="imagen-media" src="assets/facebook.jpg" alt="Facebook"> </a>
+            <li> <a href="https://www.facebook.com/notandistintes" target="_blank"> <!facebook> <img class="imagen-media" src="assets/facebook-sin-fondo.png" alt="Facebook"> </a>
             </li>
-            <li> <a href="https://www.youtube.com/channel/UCfflQT6KB6UuQvbNqkFloxw/featured" target="_blank"> <!youtube> <img class="imagen-media" src="assets/youtube.jpg" alt="Youtube"></a> 
+            <li> <a href="https://www.youtube.com/channel/UCfflQT6KB6UuQvbNqkFloxw/featured" target="_blank"> <!youtube> <img class="imagen-media" src="assets/youtube-sin-fondo.png" alt="Youtube"></a> 
            </li>
        </ul>
     </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -3,20 +3,41 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Source Code Pro', monospace;
+	font-size:large;
+}
+/*fondo de todas las paginas*/
+body{
+	background-image: url(fondo-1.jpg);
 }
 
 /*Header*/
 header {
-    background: black;
-    width: 100%;
-    height: 50px;
+	margin: 8px;
+	padding: 5px;
+	width: 100%;
+    height: 100px;
     z-index: 100;
+	background-color: black;
+  }
+/*contenedor logo del header*/
+  .div-logo{
+	display: flex;
+	justify-content: center;
+  }
+  /*imagen logo*/
+  .logo{
+	width: 300px;
+	height: 90px;
+
   }
 
-h1{
-    color: aliceblue;
-    text-align: center;
+
+nav{
+	margin-top: 8px;
+	background-color: black;
+	height: 28px;
 }
+
 
 .lista-nav { 
     list-style-type: none;
@@ -25,29 +46,24 @@ h1{
     justify-content: center;
     align-items: center;
     gap: 45px;
-    background-color:black;
     color: aliceblue !important;
 }
 
 .item-lista-nav:hover {
     background: #eca023;
-
-    }
+ }
 
 .item-lista-nav a {
     text-decoration: none !important;
     color: aliceblue !important;
-
 }
 
 
 /*main del index?*/
 main {
-    margin-top: 90px;
-    margin-left: 70px;
-    margin-right: 70px;
-    border:20px solid white; 
-    padding:70px;
+    margin: 30px 150px 20px 150px;
+	padding: 40px 70px 30px 70px;
+	text-align: justify;
 }
 
 .link-ntd{
@@ -55,7 +71,7 @@ main {
     color: black;
 }
 .link-ntd:hover{
-    background: #eca023;
+    background: #db8046;
     color:aliceblue;
 
     }
@@ -69,6 +85,7 @@ main {
 display: block;
 } 
 .container-lista-footer{
+	margin-top:20px;
     display:flex;
     justify-content: center;
 }
@@ -80,8 +97,8 @@ display: block;
   }
 
 .imagen-media{
-    max-width: 40%;
-    max-height: 40%;
+    max-width: 52%;
+    max-height: 52%;
 }
 
 .texto-footer{
@@ -105,16 +122,18 @@ display: block;
     display:flex;
     justify-content: center;
     justify-items: center;
+	margin:10px;
+	padding:8px;
 }
 #carouselExampleCaptions{
-    
-    display:flex;
+	border: 8px solid black;
+     display:flex;
     justify-content: center;
 }
 
 .carousel-control-prev-icon{
     background-color: black;
-    opacity: 100%;
+    
 }
 .carousel-control-next-icon{
     background-color: black;
@@ -123,7 +142,7 @@ display: block;
 
 
 
-/*modales del aside en index*/
+/*div de modales con los proyectos*/
 .modal-spa{
 	width: 100%;
 	height: 100vh;
@@ -146,14 +165,15 @@ display: block;
 	visibility: visible;
 } 
 .contenedor-spa{
-	width: 600px;
-	height: 600px;
+	width: 800px;
+	height: 900px;
 	margin: auto;
 	background: #fff;
 	box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
 	transition: all 500ms ease;
 	position: relative;
 	transform: translateY(-30%);
+	overflow: hidden;
 }
 #btn-modal-spa:checked ~ .modal-spa .contenedor-spa{
 	transform: translateY(0%);
@@ -185,20 +205,23 @@ display: block;
 	display: none;
 }
 .lbl-modal-spa{
-	background: #fff;
+	background: black;
+	color:aliceblue;
 	padding: 10px 15px;
 	border-radius: 4px;
 	cursor: pointer;
 }
-@media only screen and (min-width:320px) and (max-width:768px){
-	.contenedor-spa{
-		width: 95%;
-	}
+.lbl-modal-spa:hover{
+	background-color: #db8046;
+
 }
 
-
-
-
+.div-contenedor-modales{
+	margin: 10px;
+	padding:8px;
+	display: flex;
+	justify-content:space-evenly;
+}
 
 .modal-cuaderno{
 	width: 100%;
@@ -222,8 +245,8 @@ display: block;
 	visibility: visible;
 } 
 .contenedor-cuaderno{
-	width: 600px;
-	height: 600px;
+	width: 750px;
+	height: 700px;
 	margin: auto;
 	background: #fff;
 	box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
@@ -261,15 +284,14 @@ display: block;
 	display: none;
 }
 .lbl-modal-cuaderno{
-	background: #fff;
+	background: black;
+	color:aliceblue;
 	padding: 10px 15px;
 	border-radius: 4px;
 	cursor: pointer;
 }
-@media only screen and (min-width:320px) and (max-width:768px){
-	.contenedor-cuaderno{
-		width: 95%;
-	}
+.lbl-modal-cuaderno:hover{
+	background-color: #db8046;
 }
 
 .modal-editorial{
@@ -294,14 +316,15 @@ display: block;
 	visibility: visible;
 } 
 .contenedor-editorial{
-	width: 600px;
-	height: 600px;
+	width: 800px;
+	height: 900px;
 	margin: auto;
-	background: #bebbda;
+	background: #fff;
 	box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
 	transition: all 500ms ease;
 	position: relative;
 	transform: translateY(-30%);
+	overflow: hidden;
 }
 #btn-modal-editorial:checked ~ .modal-editorial .contenedor-editorial{
 	transform: translateY(0%);
@@ -333,20 +356,23 @@ display: block;
 	display: none;
 }
 .lbl-modal-editorial{
-	background: #fff;
+	background: black;
+	color:aliceblue;
 	padding: 10px 15px;
 	border-radius: 4px;
 	cursor: pointer;
 }
-@media only screen and (min-width:320px) and (max-width:768px){
-	.contenedor-editorial{
-		width: 95%;
-	}
+.lbl-modal-editorial:hover{
+	background-color: #db8046;
 }
   
 
 
+.imagen-modal{
+	width: 600px;
+	height: 480px;
 
+}
 
 .main-help-us {
     display:flex;
@@ -403,7 +429,7 @@ display: block;
   #imagen4{
     background-image: url(agendas-4.jpg);
   }
-    #imagen5{
+#imagen5{
     background-image: url(agendas-5.jpg);
   }
   #imagen6{
@@ -411,4 +437,9 @@ display: block;
   }
  #imagen7{
     background-image: url(agendas-7.jpg);
+  }
+  
+  .div-coontenedor-modales{
+	float:left;
+	background-color: #db8046;
   }
