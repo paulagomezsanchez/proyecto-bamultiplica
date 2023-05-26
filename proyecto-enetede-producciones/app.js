@@ -1,4 +1,4 @@
-//funcion que captura datos del formulario y los muestra en consola
+//funcion que captura datos que se ingresan al formulario y los muestra en consola al apretar botón Enviar
 
 var getData= function(){
     var name= document.getElementById("nombre").value;
@@ -10,4 +10,4 @@ var getData= function(){
     console.log("NOMBRE:"+" " +name+ "; "+"APELLIDO:"+ " "+ lastName+"; "+"PRONOMBRES: "+ pronombre+ "; "+"TELÉFONO:"+ " "+tel+"; "+"E-MAIL:"+email+"; "+"MENSAJE:"+mensaje+" ");
 }
 
-//falta hacerles las marcas de requeridos, y hacer requerido también los pronombres
+//faltaría hacerles las marcas de requeridos, y hacer request también el input de los pronombres
