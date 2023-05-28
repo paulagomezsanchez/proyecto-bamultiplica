@@ -64,7 +64,7 @@ main {
     color: black;
 }
 .link-ntd:hover{
-    background: #db8046;
+    background: #eca023;
     color:aliceblue;
 }
 
@@ -131,7 +131,7 @@ main {
 .contenedor-spa{
 	width: 60%; 
 	margin: auto;
-	background: #fff;
+	color:aliceblue;
 	box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
 	transition: all 500ms ease;
 	position: relative;
@@ -146,14 +146,14 @@ main {
 .titulo-modal{
 	margin:0%;
 	padding: 10px; 
-	background: #db8046;
-	color: #fff;
+	background: #eca023;
+	color:aliceblue;
 }
 .contenedor-spa label{
 	position: absolute;
 	top: 10px;
 	right: 10px;
-	color: #fff;
+	color:aliceblue;
 	font-size: 15px;
 	cursor: pointer;
 }
@@ -178,7 +178,7 @@ main {
 	cursor: pointer;
 }
 .lbl-modal-spa:hover{
-	background-color: #db8046;
+	background: #eca023;
 
 }
 
@@ -213,7 +213,7 @@ main {
 .contenedor-cuaderno{
 	width: 60%;
 	margin: auto;
-	background: #fff;
+	color:aliceblue;
 	box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
 	transition: all 500ms ease;
 	position: relative;
@@ -227,14 +227,14 @@ main {
 .contenedor-cuaderno header{
 	margin:0%;
 	padding: 10px;
-	background: #db8046;
-	color: #fff;
+	background: #eca023;
+	color:aliceblue;
 }
 .contenedor-cuaderno label{
 	position: absolute;
 	top: 10px;
 	right: 10px;
-	color: #fff;
+	color:aliceblue;
 	font-size: 15px;
 	cursor: pointer;
 }
@@ -264,7 +264,7 @@ main {
 }
 
 .lbl-modal-cuaderno:hover{
-	background-color: #db8046;
+	background: #eca023;
 }
 
 .modal-editorial{
@@ -290,7 +290,7 @@ main {
 .contenedor-editorial{
 	width: 60%;
 	margin: auto;
-	background: #fff;
+	color:aliceblue;
 	box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
 	transition: all 500ms ease;
 	position: relative;
@@ -305,14 +305,14 @@ main {
 .contenedor-editorial header{
 	margin:0%;
 	padding: 10px;
-	background: #db8046;
-	color: #fff;
+	background: #eca023;
+	color:aliceblue;
 }
 .contenedor-editorial label{
 	position: absolute;
 	top: 10px;
 	right: 10px;
-	color: #fff;
+	color:aliceblue;
 	font-size: 15px;
 	cursor: pointer;
 }
@@ -338,7 +338,7 @@ main {
 	cursor: pointer;
 }
 .lbl-modal-editorial:hover{
-	background-color: #db8046;
+	background: #eca023;
 }
   
 .imagen-modal{
@@ -395,9 +395,9 @@ main {
     background-image: url(agendas-7.jpg);
   }
 
-  /*Esto es del Form*/
+  /*Esto es del Form en Contact*/
 #submit:hover {
-	background: #db8046;
+	background: #eca023;
     color:aliceblue;
   }
 
@@ -417,33 +417,53 @@ main {
   /*footer*/
 .container-footer{
 	display: block;
+	margin-bottom: 8px;
 	} 
+
 	.container-lista-footer{
-		margin:2%;
+		margin-top:1%;
 		display:flex;
 		justify-content: center;
 	}
-	
+
+	.container-linea-divisoria{
+		display: flex;
+		justify-content: center;
+	}
+	.linea-divisoria {
+		max-height: 10%;
+        max-width: 10%;
+		opacity: 80%;
+	}
+
 	.lista-footer {
 		list-style-type: none;
 		display:flex;
 		justify-content: center;
+		margin-bottom: 0;
+		padding-left: 0;
 	  }
 	
 	.imagen-media{
-		max-width: 52%;
-		max-height: 52%;
+		max-width: 85%;
+		max-height: 85%;
+		margin:1% 2% 1% 2%;
+	}
+
+	.imagen-media:hover {
+		background: #eca023;
 	}
 	
 	.texto-footer{
+		font-size: small;
 		text-align: center;
 	}
 
 /*probando media queries*/
 
-
-/*este cambia el tamaño de los div en el grid*/ 
- @media (min-width: 600px) {
+/*
+este cambia el tamaño de los div en el grid
+ @media (min-width: 480px) {
     .wide {
       grid-column: span 2;
     }
@@ -452,4 +472,4 @@ main {
       grid-row: span 2;
     }
   }
-
+*/
