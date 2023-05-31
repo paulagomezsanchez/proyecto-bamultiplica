@@ -15,8 +15,8 @@ body{
 
 /*Header*/
 header {
-	margin: 1%;
 	width: 100%;
+	margin: 1%;
 	background-color: black;
   }
 /*contenedor logo del header*/
@@ -26,13 +26,15 @@ header {
   }
   /*imagen logo*/
   .logo{
-	margin:2%;
+	margin:1%;
 	width: 23%;
 	min-height: 5%;
 
   }
 
 .lista-nav { 
+	margin-bottom: 0;
+	padding-left: 0;
     list-style-type: none;
     display: flex;
     text-align: justify;
@@ -49,8 +51,6 @@ header {
     text-decoration: none;
     color:aliceblue  !important; 
 }
-
-
 
 main {
 	margin:1% 3% 1% 3%;
@@ -83,7 +83,7 @@ main {
 }
 
 #carouselExampleCaptions{
-	width: 60%;
+	width: 65%;
 	min-height: 25%;
 	margin:1 rem;
 	border: 8px solid black;
@@ -92,9 +92,15 @@ main {
 	justify-content: center;
 }
 
+.carousel-caption{
+	bottom: 0.5rem;
+}
+
 .texto-carousel {
     background-color: black;
     opacity: 70%;
+	margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .carousel-control-prev-icon{
@@ -109,6 +115,7 @@ main {
 /*Div de modales con los proyectos*/
 
 .div-contenedor-modales{
+	width: 100%;
 	margin: 10px;
 	padding:8px;
 	display: flex;
@@ -414,7 +421,12 @@ main {
   #imagen10{
 	background-image: url(../assets/agendas-10.png);
   }
-  /*Esto es del Form en Contact*/
+  /*Esto es del Contact*/
+
+  .video-spa{
+	width: 60%;
+	min-height: 25%;
+  }
 #submit{
 	border-radius: 4px;
 	box-shadow: 3px 3px 4px #6a6969;
@@ -468,13 +480,13 @@ main {
 		list-style-type: none;
 		display:flex;
 		justify-content: center;
-		margin-bottom: 0;
+		margin-bottom: 0.5rem;
 		padding-left: 0;
 	  }
 	
 	.imagen-media{
-		max-width: 85%;
-		max-height: 85%;
+		width: 85%;
+		min-height: 85%;
 		margin:1% 2% 1% 2%;
 		border: 1px;
 		border-radius: 50px;
